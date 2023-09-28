@@ -1,0 +1,25 @@
+.header_container {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_icon {
+  cursor: pointer;
+}
+.header_icon svg {
+  transition: transform 0.7s ease-in-out;
+}
+.header_icon:hover svg {
+  transform: rotate(360deg);
+}
+.logo {
+  margin: 0px;
+  font-weight: 100;
+}
+.sub_logo {
+  margin: 0px;
+  font-weight: 300;
+}
+.Navbar {
+}
