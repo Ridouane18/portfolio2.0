@@ -14,7 +14,7 @@ const HomePageContainer = () => {
       </section>
       <section className={styles.section_2}>
         <div>
-          <h1>I'm Ridouane Tansouft 👋</h1>
+          <h1>I&lsquo;m Ridouane Tansouft 👋</h1>
           <h3>Front-end developer specializing in ReactJS and NextJS</h3>
         </div>
         <p>
@@ -24,8 +24,8 @@ const HomePageContainer = () => {
           I excel in creating responsive, interactive, and high-performing
           interfaces. My detail-oriented and collaborative approach drives me to
           conquer complex challenges as part of a team, ensuring exceptional outcomes
-          in feature design, bug resolution, and performance optimization. If you're
-          seeking expertise to bring your projects to life, let's connect and collaborate.
+          in feature design, bug resolution, and performance optimization. If you&lsquo;re
+          seeking expertise to bring your projects to life, let&lsquo;s connect and collaborate.
         </p>
         <Footer />
       </section>

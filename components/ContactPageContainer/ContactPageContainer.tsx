@@ -16,8 +16,6 @@ const ContactPageContainer = () => {
       formattedData[name] = value;
     }
 
-    console.log('formattedData', formattedData);
-
     emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, formattedData, YOUR_PUBLIC_KEY)
       .then((result) => {
         formData.reset();
@@ -33,7 +31,7 @@ const ContactPageContainer = () => {
       <div className={styles.ContactPage_container}>
         <h2 className={styles.ContactPageTitle}>Contact</h2>
         <p className={styles.text}>
-          Greetings! I'm a seasoned front-end developer proficient in ReactJS, Next.js, JavaScript, and TypeScript. With 3+ years of experience, I specialize in crafting seamless web applications that blend design and functionality. Let's talk about your project – get in touch via the form below!
+          Greetings! I&lsquo;m a seasoned front-end developer proficient in ReactJS, Next.js, JavaScript, and TypeScript. With 3+ years of experience, I specialize in crafting seamless web applications that blend design and functionality. Let&lsquo;s talk about your project – get in touch via the form below!
         </p>
         <div className={styles.inputsContainer}>
           <div className={styles.inputContainer}>
