@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { Providers } from './providers';
 import { Roboto } from 'next/font/google';
-import './globals.css';
 import Header from 'components/Header/Header';
 import Head from 'next/head';
+import './globals.css';
+import SocialMediaFooer from 'components/SocialMediaFooer/SocialMediaFooer';
 
 const roboto = Roboto({
   weight: ["400", '100', '300'],
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className='layout_container'>
             {children}
           </div>
+          <SocialMediaFooer/>
         </body>
       </Providers>
       {/* {children} */}

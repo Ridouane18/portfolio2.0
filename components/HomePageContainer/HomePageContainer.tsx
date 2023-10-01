@@ -14,8 +14,7 @@ const HomePageContainer = () => {
       </section>
       <section className={styles.section_2}>
         <div>
-          <h1>I'm Ridouane Tansouft, 👋</h1>
-          {/* <strong>👋 </strong> */}
+          <h1>I'm Ridouane Tansouft 👋</h1>
           <h3>Front-end developer specializing in ReactJS and NextJS</h3>
         </div>
         <p>
