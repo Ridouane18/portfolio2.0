@@ -15,6 +15,7 @@ const Header = () => {
     <div className={styles.header_container}>
       <div>
         <Link href={'/'}>
+          {/* <strong>RT</strong> */}
           <Image src={Logo} alt="my gif" height={50} width={50} priority />
         </Link>
       </div>

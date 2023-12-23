@@ -2,14 +2,16 @@ body {
   margin: 0px;
   padding: 0 1.6rem;
 }
+
 .layout_container {
   height: 100%;
   background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);
-  /* background: radial-gradient(140% 107.13% at 50% 10%, #63e 37.41%, transparent 69.27%, transparent 100%); */
   border-radius: 2.4rem;
   border: 1px solid #2a2b3a;
   padding: 1.6rem;
 }
+
+
 :root {
   /* Your default theme */
   --background: #010314;

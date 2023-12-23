@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { Suspense } from 'react';
 import styles from './HomePageContainer.module.css';
 import myGif from '../../assets/myGif.gif';
 import dynamic from 'next/dynamic';
@@ -15,7 +15,7 @@ const HomePageContainer = () => {
       <section className={styles.section_2}>
         <div>
           <h1>I&lsquo;m Ridouane Tansouft 👋</h1>
-          <h3>Front-end developer specializing in ReactJS and NextJS</h3>
+          <h3>Front-end developer at <a href='https://sobrus.com/' target="_blank">Sobrus</a></h3>
         </div>
         <p>
           I specialize in <a href='https://react.dev/' target="_blank">ReactJS</a> and <a href='https://nextjs.org/docs' target="_blank">NextJS</a>,
@@ -27,7 +27,9 @@ const HomePageContainer = () => {
           in feature design, bug resolution, and performance optimization. If you&lsquo;re
           seeking expertise to bring your projects to life, let&lsquo;s connect and collaborate.
         </p>
-        <Footer />
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
       </section>
     </div>
   )
