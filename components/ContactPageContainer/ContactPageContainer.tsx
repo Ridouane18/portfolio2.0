@@ -16,15 +16,29 @@ const ContactPageContainer = () => {
       formattedData[name] = value;
     }
 
-    emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, formattedData, YOUR_PUBLIC_KEY)
+    console.log('formData', formData);
+
+    // Construct a new FormData object with the provided values
+    const formDataToSend = new FormData();
+    formDataToSend.append('name', formattedData['name']);
+    formDataToSend.append('email', formattedData['email']);
+    formDataToSend.append('subject', formattedData['subject']);
+    formDataToSend.append('message', formattedData['message']);
+
+    // Extracting data from FormData
+    const extractedData = {} as any;
+    for (const [key, value] of formData) {
+      extractedData[key] = value;
+    }
+    console.log('extractedData', extractedData);
+
+    await emailjs.send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, extractedData, YOUR_PUBLIC_KEY)
       .then((result) => {
         formData.reset();
-        console.log('result', result);
       }, (error) => {
         console.error(error.text);
       });
   }
-
 
   return (
     <form action={sendEmail}>

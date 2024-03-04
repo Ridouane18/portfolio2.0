@@ -15,7 +15,8 @@ const HomePageContainer = () => {
       <section className={styles.section_2}>
         <div>
           <h1>I&lsquo;m Ridouane Tansouft 👋</h1>
-          <h3>Front-end developer at <a href='https://sobrus.com/' target="_blank">Sobrus</a></h3>
+          <h3>Front-end developer </h3>
+          {/* <a href='https://sobrus.com/' target="_blank">Sobrus</a> */}
         </div>
         <p>
           I specialize in <a href='https://react.dev/' target="_blank">ReactJS</a> and <a href='https://nextjs.org/docs' target="_blank">NextJS</a>,

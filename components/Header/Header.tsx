@@ -3,20 +3,20 @@ import React from 'react'
 import styles from './header.module.css'
 import { useTheme } from 'next-themes';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
+import { MdSunnySnowing } from "react-icons/md";
 import Logo from '../../assets/favicon.webp'
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Header = () => {
   const { theme, setTheme } = useTheme()
-  console.log('theme', theme);
 
   return (
     <div className={styles.header_container}>
       <div>
         <Link href={'/'}>
-          {/* <strong>RT</strong> */}
-          <Image src={Logo} alt="my gif" height={50} width={50} priority />
+          <MdSunnySnowing size={40} />
+          {/* <Image src={Logo} alt="my gif" height={50} width={50} priority /> */}
         </Link>
       </div>
       {/* <div className={styles.Navbar} >
