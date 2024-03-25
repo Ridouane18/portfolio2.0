@@ -10,8 +10,15 @@
 .section_2 {
   width: 50%;
 }
-.section_1_image {
+.section_1_image_container{
   width: 80%;
+  height: auto;
+  display: flex;
+    /* align-items: stretch; */
+    justify-content: center;
+}
+.section_1_image {
+  width: 70%;
   height: auto;
 }
 
@@ -26,6 +33,7 @@
   margin-bottom: 3rem;
   font-weight: 400;
   opacity: 80%;
+  gap: 1rem;
 }
 .section_2 p {
   font-size: 1rem;
@@ -59,5 +67,8 @@
   }
   .section_2 h3 {
     font-size: 1.05rem;
+  }
+  .section_1_image_container{
+    width: 100%;
   }
 }

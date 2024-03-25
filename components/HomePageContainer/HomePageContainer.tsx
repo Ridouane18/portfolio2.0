@@ -10,13 +10,14 @@ const HomePageContainer = () => {
   return (
     <div className={styles.HomePage}>
       <section className={styles.section_1}>
-        <Image className={styles.section_1_image} src={myGif} alt="my gif" height={500} width={500} priority />
+        <div className={styles.section_1_image_container}>
+          <Image className={styles.section_1_image} src={myGif} alt="my gif" height={500} width={500} priority />
+        </div>
       </section>
       <section className={styles.section_2}>
         <div>
           <h1>I&lsquo;m Ridouane Tansouft 👋</h1>
-          <h3>Front-end developer </h3>
-          {/* <a href='https://sobrus.com/' target="_blank">Sobrus</a> */}
+          <h3>Front-end developer at <a href='https://www.bouyguestelecom.fr/' target="_blank"> Bouygues Telecom</a></h3>
         </div>
         <p>
           I specialize in <a href='https://react.dev/' target="_blank">ReactJS</a> and <a href='https://nextjs.org/docs' target="_blank">NextJS</a>,
