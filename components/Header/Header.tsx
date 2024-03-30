@@ -3,11 +3,12 @@ import React from 'react'
 import styles from './header.module.css'
 import { useTheme } from 'next-themes';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
-import { MdSunnySnowing } from "react-icons/md";
+import { SiHomebridge } from "react-icons/si";
 // import Logo from '../../assets/favicon.webp'
-import Logo from '../../assets/logo.png'
-import Image from 'next/image';
+// import Logo from '../../assets/logo.png'
+// import Image from 'next/image';
 import Link from 'next/link';
+
 
 const Header = () => {
   const { theme, setTheme } = useTheme()
@@ -16,7 +17,7 @@ const Header = () => {
     <div className={styles.header_container}>
       <div>
         <Link href={'/'}>
-          {/* <MdSunnySnowing size={40} /> */}
+          <SiHomebridge size={20} color={theme === 'dark' ? '#fff' : '#000'} />
           {/* <Image src={Logo} alt="my gif" height={50} width={50} priority /> */}
         </Link>
       </div>

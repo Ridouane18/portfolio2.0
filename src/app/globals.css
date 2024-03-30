@@ -18,18 +18,22 @@ body {
   --foreground: white;
 }
 
-[data-theme="dark"] {
-  --background: #010314;
+/* [data-theme="dark"] {
+  --background: #000000;
   --foreground: white;
 }
 
 [data-theme="light"] {
   --background: red;
-  --foreground: #010314;
-}
+  --foreground: #000000;
+} */
 
 @media only screen and (max-width: 830px) {
   .layout_container {
     padding: 0.6rem;
+  }
+  body {
+    margin: 0px;
+    padding: 0 .6rem;
   }
 }

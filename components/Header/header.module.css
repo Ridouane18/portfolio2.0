@@ -33,3 +33,7 @@
 .Navlink{
   text-decoration: none;
 }
+
+.Navlink:hover{
+  color: #fff;
+}
