@@ -1,33 +1,44 @@
 body {
   margin: 0px;
-  padding: 0 1.6rem;
+  padding: 0 10rem;
 }
 
 .layout_container {
   height: 100%;
-  background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);
+  /* background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%);
   border-radius: 2.4rem;
-  border: 1px solid #2a2b3a;
+  border: 1px solid #2a2b3a; */
   padding: 1.6rem;
-  box-shadow: 0px 4px 12px;
+  /* box-shadow: 0px 4px 12px; */
 }
 
 
 :root {
-  /* Your default theme */
   --background: #010314;
   --foreground: white;
+
+  --card-height: 45vh;
+  --card-width: calc(var(--card-height) / 1.5);
 }
 
-/* [data-theme="dark"] {
+:root[data-theme="dark"] {
   --background: #000000;
   --foreground: white;
 }
 
-[data-theme="light"] {
+:root[data-theme="light"] {
   --background: red;
   --foreground: #000000;
-} */
+}
+
+/* Media query from 600px to 900px */
+@media only screen and (min-width: 300px) and (max-width: 830px) {
+  /* Styles for screens between 600px and 900px */
+  body {
+    margin: 0px;
+    padding: 0 5rem;
+  }
+}
 
 @media only screen and (max-width: 830px) {
   .layout_container {
@@ -35,6 +46,6 @@ body {
   }
   body {
     margin: 0px;
-    padding: 0 .6rem;
+    padding: 0 1rem;
   }
 }

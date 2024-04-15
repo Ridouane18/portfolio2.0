@@ -25,8 +25,8 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  border: 1px solid ;
-  border-radius: 2.4rem;
+  /* border: 1px solid ;
+  border-radius: 2.4rem; */
   height: 30px;
   padding: 0 1rem;
 }
@@ -35,5 +35,8 @@
 }
 
 .Navlink:hover{
+  color: #fff;
+}
+.active{
   color: #fff;
 }

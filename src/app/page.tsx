@@ -5,14 +5,13 @@ const HomePageContainer = dynamic(() => import('components/HomePageContainer/Hom
   loading: () => <p>Loading...</p>,
 })
 
-const Header = dynamic(() => import('components/Header/Header'))
-const Footer = dynamic(() => import('components/Footer/Footer'))
+// const Header = dynamic(() => import('components/Header/Header'))
+// const Footer = dynamic(() => import('components/Footer/Footer'))
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <HomePageContainer />
-      {/* <Footer /> */}
     </main>
   )
 }

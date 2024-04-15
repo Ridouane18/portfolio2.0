@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import { Providers } from './providers';
-import { Roboto } from 'next/font/google';
+import { Source_Code_Pro } from 'next/font/google';
 import Header from 'components/Header/Header';
 import Head from 'next/head';
 import SocialMediaFooer from 'components/SocialMediaFooer/SocialMediaFooer';
 import './globals.css';
 
 
-const roboto = Roboto({
-  weight: ["400", '100', '300'],
+const sourceCodePro = Source_Code_Pro({
+  weight: ["400", '200', '300'],
   subsets: ['latin'],
   display: 'swap',
 })
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={sourceCodePro.className}>
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>

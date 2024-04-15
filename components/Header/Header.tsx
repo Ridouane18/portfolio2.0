@@ -3,32 +3,34 @@ import React from 'react'
 import styles from './header.module.css'
 import { useTheme } from 'next-themes';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
-import { SiHomebridge } from "react-icons/si";
+import { IoIosArrowBack } from "react-icons/io";
 // import Logo from '../../assets/favicon.webp'
 // import Logo from '../../assets/logo.png'
 // import Image from 'next/image';
 import Link from 'next/link';
-
+import { usePathname } from 'next/navigation'
+import { CiHome } from "react-icons/ci";
 
 const Header = () => {
   const { theme, setTheme } = useTheme()
+  const pathname = usePathname();
 
   return (
     <div className={styles.header_container}>
       <div>
         <Link href={'/'}>
-          <SiHomebridge size={20} color={theme === 'dark' ? '#fff' : '#000'} />
-          {/* <Image src={Logo} alt="my gif" height={50} width={50} priority /> */}
+          {/* {pathname !== '/' && <IoIosArrowBack size={20} color={theme === 'dark' ? '#fff' : '#000'} />} */}
+          {pathname !== '/' && <CiHome size={20} color={theme === 'dark' ? '#fff' : '#000'} />}
         </Link>
       </div>
       <div className={styles.Navbar_container} >
-        <Link className={styles.Navlink} href={'/blog'}>
+        <Link className={`${styles.Navlink} ${pathname === '/blog' ? styles.active : ''}`} href={'/blog'} >
           Blog
         </Link>
-        <Link className={styles.Navlink} href={'/tech-news'}>
+        <Link className={`${styles.Navlink} ${pathname === '/tech-news' ? styles.active : ''}`} href={'/tech-news'}>
           Frontend news
         </Link>
-        <Link className={styles.Navlink} href={'/projects'}>
+        <Link className={`${styles.Navlink} ${pathname === '/projects' ? styles.active : ''}`} href={'/projects'}>
           Projects
         </Link>
       </div>
